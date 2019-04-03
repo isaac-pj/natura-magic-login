@@ -1,0 +1,40 @@
+{
+    "name": "Natura Magic Login",
+    "version": "0.4",
+    "description": "Help devs to login in natura localhost projects get coockies and some other properties from local storage",
+    "short_name": "Magic Login",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": {
+        "16": "images/icon16.png",
+        "24": "images/icon24.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+        },
+        "default_title": "Natura Magic Login"
+    },
+    "background": {
+        "scripts": [
+            "scripts/background.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://loginhml.natura.net/*",
+            "*://consultoriahml.natura.com.br/*",
+            "*://*.consultoriahml.natura.com.br/*",
+            "*://localhost/webfv/*"
+        ],
+        "js": [
+            "scripts/content.js"
+        ]
+    }],
+    "permissions": [
+        "storage",
+        "tabs",
+        "http://localhost/webfv"
+    ],
+    "manifest_version": 2
+}

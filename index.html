@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steals Coockie</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="frameworks/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- local -->
+    <link rel="stylesheet" href="styles/master.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div id="info" class="jumbotron">
+                <section id="logo">
+                    <a href="https://consultoriahml.natura.com.br/webfv" target="_blank">
+                        <img src="images/logo_natura.svg" alt="logo natura">
+                    </a>
+                </section>
+                <p>
+                    O Magic Login simplifica a autenticação no site da 
+                    natura em desenvolvimento.
+                </p>
+                <hr class="my-4">
+                <form id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" aria-describedby="userName" placeholder="Usuário">
+                        <small id="userName" class="form-text text-muted">Você precisa estar pré-cadastrado para logar</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Senha">
+                    </div>
+                    <div class="form-group form-check">
+                        <div id="toolbar">
+                            <div class="left">
+                                <input type="checkbox" class="form-check-input" id="remenber" value="off">
+                                <label class="form-check-label" for="remenber">Lembrar</label>
+                            </div>
+                            <div class="hide right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="autoReload">
+                                    <label class="custom-control-label" for="customSwitch1">auto</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <section id="lifetime" class="hide">
+                    <h1>Token Lifetime</h1>
+                    <h1 id="clock" class="display-4">00:00:00</h1>
+                </section>
+            </div>
+        </header>
+        <section id="buttons">
+
+            <button id="loginbutton" class="btn btn-lg btn-natura btn-block">MAGIC LOGIN</button>
+        </section>
+        <footer id="rights">
+            <a href="https://vizir.com.br" target="_blank">
+                <h6>magic login 0.4 - vizir teams</h6>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

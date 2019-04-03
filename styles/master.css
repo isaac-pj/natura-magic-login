@@ -1,0 +1,89 @@
+#wrapper{
+    padding: 2rem;
+    width: 400px;
+}
+
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo::after{
+    content: "";
+    background-color: #f3971f;
+    width: 20%;
+    height: 3px;
+    border-radius: 3px;
+    margin: 25px auto;
+}
+
+.no-text-break{
+    white-space: nowrap;
+}
+
+#rights{
+    padding: 2rem 1rem 0 1rem;
+    color: #000;
+    opacity: .3;
+    text-align: center;
+}
+
+.btn-natura{
+    background-color: #f3971f;
+    color: #fff;
+}
+
+.btn-natura:hover{
+    background-color: #f1b565;
+    color: #fff;
+}
+
+.btn-natura:active{
+    opacity: .9;
+}
+
+#info{
+    text-align: center;
+    background-color:#f8f8f8;
+    color: #444;
+    padding-bottom: 1rem;
+}
+
+#form{
+    text-align: initial;
+}
+
+.form-check{
+    margin-bottom: initial; 
+}
+
+#toolbar{
+    display: flex;
+    width: 100%;
+}
+
+#toolbar .left{
+    
+}
+
+#toolbar .right{
+    margin-left: auto; 
+}
+
+/* Overide bootstrap styles */
+
+.custom-control-input:checked~.custom-control-label::before{
+    background-color: #f46b34;
+    border-color: #f3971f;
+}
+
+#rights a{
+    color: #000;
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+}
